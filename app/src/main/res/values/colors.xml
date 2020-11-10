@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#59709C</color>
+    <color name="colorTool">#2d3546</color>
+    <color name="tranPrimary">#7F343e52</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPrimaryDark">#e5343d</color>
+    <color name="colorAccent">#e5343d</color>
+    <color name="grey">#D3D3D3</color>
+    <color name="bg_grey">#FCFAFA</color>
+
+    <color name="black">#000000</color>
+    <color name="cartbtncolor">#FA4A59</color>
+    <color name="green">#23B114</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color">#fff</color>
+
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/tvGroupLogo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/expandableListItem"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="15dp"
+        android:gravity="left"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="45dp"
+        android:paddingTop="5dp"
+     />
+</RelativeLayout>
