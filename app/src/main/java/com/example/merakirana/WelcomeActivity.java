@@ -29,16 +29,16 @@ public class WelcomeActivity extends AppCompatActivity {
         startshoping.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+//                startActivity(intent);
             }
         });
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+//                startActivity(intent);
             }
         });
         btnStartShopping.setOnClickListener(new View.OnClickListener() {
