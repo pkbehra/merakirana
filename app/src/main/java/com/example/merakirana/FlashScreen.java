@@ -27,6 +27,7 @@ public class FlashScreen extends AppCompatActivity {
             public void run() {
                 Intent i=new Intent(FlashScreen.this,
                         HomeActivity.class);
+                finish();
                 //Intent is used to switch from one activity to another.
 
                 startActivity(i);

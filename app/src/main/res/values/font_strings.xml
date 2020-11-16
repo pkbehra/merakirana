@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="font_regular">fonts/Ubuntu-R.ttf</string>
+    <string name="font_regular_italic">fonts/Ubuntu-RI.ttf</string>
+    <string name="font_state">fonts/Ubuntu-C.ttf</string>
+    <string name="font_logo">fonts/logo font KFOnCniXp96aw4A7xUw.ttf</string>
+
+
+
+    <string name="font_graphik_semibold">fonts/Ubuntu-B.ttf</string>
+    <string name="font_graphik_semibold_Italic">fonts/Ubuntu-BI.ttf</string>
+    <string name="font_graphik_medium">fonts/Ubuntu-M.ttf</string>
+    <string name="font_graphik_medium_Italic">fonts/Ubuntu-MI.ttf</string>
+
+    <string name="font_graphik_light">fonts/Ubuntu-L.ttf</string>
+    <string name="font_graphik_light_Italic">fonts/Ubuntu-LI.ttf</string>
+</resources>

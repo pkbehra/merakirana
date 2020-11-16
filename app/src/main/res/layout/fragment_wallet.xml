@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <include
+        android:id="@+id/toolbarwallet"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarwallet">
+       <!-- <Toolbar
+            android:id="@+id/skintool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTool"
+            android:minHeight="?attr/actionBarSize"
+            android:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:title="Wallet"
+            android:titleTextColor="@color/colorWhite">
+
+        </Toolbar>-->
+
+        <!--LL Main-->
+        <RelativeLayout
+            android:id="@+id/rlMainWallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <!--Card Wallet-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvWalletBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <ImageView
+
+                            android:id="@+id/iv_Transfer"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:visibility="gone"
+                            android:src="@drawable/ic_transfer_primary" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvWalletLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="@string/label_wallet_balance"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/tvWalletBalance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvWalletLabel"
+                                android:layout_centerInParent="true"
+                                android:text="0"
+                                android:textColor="@android:color/black"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+
+                                />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--FrameLayout Transaction History-->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/cvWalletBalance"
+                    android:layout_marginBottom="50dp">
+
+                    <!--LinearLayout Transaction History-->
+                    <LinearLayout
+                        android:id="@+id/llTransactionHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Transaction History"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            > <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvTransaction"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp" />
+
+                            <TextView
+                                android:id="@+id/txtNoWalletHistory"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="No transaction history yet"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:textColor="@color/colorWhite"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--LL No Transaction Found-->
+                    <LinearLayout
+                        android:id="@+id/llNoTransaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/transaction" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:text="You have no transaction yet"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnTransfer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:text="Transfer"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <!--LL No Internet Connectivity Found-->
+            <!-- <LinearLayout
+                 android:id="@+id/llNoInternetWallet"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@color/lightGrayBackground"
+                 android:gravity="center"
+                 android:orientation="vertical"
+                 android:visibility="gone">
+
+                 <ImageView
+                     android:layout_width="32dp"
+                     android:layout_height="32dp"
+                     android:src="@drawable/no_internet" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginTop="10dp"
+                     android:gravity="center"
+                     android:text="Connection Not Available...!!!"
+                     android:textSize="16sp" />
+
+                 <TextView
+                     android:id="@+id/tvRetryWallet"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="RETRY"
+                     android:textSize="18sp" />
+
+             </LinearLayout>
+     -->
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPbWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    <include
+        layout="@layout/no_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

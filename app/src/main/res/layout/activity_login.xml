@@ -8,8 +8,9 @@
     android:background="@color/colorPrimary"
     android:gravity="center"
     android:orientation="vertical"
-
-    tools:context="com.example.merakirana.LoginActivity">
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".LoginActivity">
 
 
 

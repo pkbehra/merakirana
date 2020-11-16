@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".AccountActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Toolbar
+            android:id="@+id/skintool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="@color/colorTool"
+            android:minHeight="?attr/actionBarSize"
+            android:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:title="Account"
+            android:titleTextColor="@color/colorWhite">
+        </Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@color/grey">
+
+            <ImageButton
+                android:id="@+id/ibProfile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#d0343e52"
+                android:scaleType="fitStart" />
+
+
+            <TextView
+                android:id="@+id/tvProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:text="Profile Details"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProfile"
+                android:layout_marginStart="80dp"
+                android:text="Change your profile details"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_account_box_red_24dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlwallet"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@color/grey">
+
+            <ImageButton
+                android:id="@+id/ibWallet"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#d0343e52"
+                android:scaleType="fitStart" />
+
+            <TextView
+                android:id="@+id/tvWallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:text="Wallet"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWallet"
+                android:layout_marginStart="80dp"
+                android:text="Check your balance"
+                android:textColor="@color/colorWhite"
+
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_account_balance_wallet_black_24dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@color/grey">
+
+            <ImageButton
+                android:id="@+id/ibResetPass"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#d0343e52"
+                android:scaleType="fitStart"
+
+                />
+
+            <TextView
+                android:id="@+id/tvResetPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:text="Reset Password"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvResetPass"
+                android:layout_marginStart="80dp"
+                android:text="Change your account password"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_refresh_black_24dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="4dp"
+            android:background="@color/colorAccent"
+            android:text="Logout"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameAccount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_grey"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:textColor="@color/black"
+        android:text="Select payment option"
+        android:textSize="16dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/card" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/cash" />
+
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/rgPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rbCard"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:background="?android:selectableItemBackground"
+                android:layoutDirection="rtl"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Card"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@color/grey"/>
+            <RadioButton
+                android:id="@+id/rbCash"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:background="?android:selectableItemBackground"
+                android:layoutDirection="rtl"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Cash"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:background="@color/grey"
+        android:text="Continue"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

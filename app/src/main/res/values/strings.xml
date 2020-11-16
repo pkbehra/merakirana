@@ -3,7 +3,7 @@
     <string name="title_activity_login">Sign in</string>
 
 
-    <string name="BASE_URL">https://www.efunhub.in/GroBizz/automobile/api/</string>
+    <string name="BASE_URL">http://www.centriotech.com/merakirana/register_ur.php</string>
     <string name="MAIN_CATEGORY_IMG">https://www.efunhub.in/GroBizz/automobile/images/maincategory/</string>
     <string name="PROD_IMG_URL">https://www.efunhub.in/GroBizz/automobile/images/product/</string>
     <string name="PROD_GALLERY_IMG_URL">https://www.efunhub.in/GroBizz/automobile/images/productimages/</string>
@@ -35,34 +35,34 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="home_second">Home Second</string>
-    <!--    <string name="title_activity_home">Home</string>-->
-    <!--    <string name="navigation_drawer_open">Open navigation drawer</string>-->
-    <!--    <string name="navigation_drawer_close">Close navigation drawer</string>-->
-    <!--    <string name="nav_header_title">Android Studio</string>-->
-    <!--    <string name="nav_header_subtitle">android.studio@android.com</string>-->
-    <!--    <string name="nav_header_desc">Navigation header</string>-->
-    <!--    <string name="action_settings">Settings</string>-->
+    <!--        <string name="title_activity_home">Home</string>-->
+    <!--        <string name="navigation_drawer_open">Open navigation drawer</string>-->
+    <!--        <string name="navigation_drawer_close">Close navigation drawer</string>-->
+    <!--        <string name="nav_header_title">Android Studio</string>-->
+    <!--        <string name="nav_header_subtitle">android.studio@android.com</string>-->
+    <!--        <string name="nav_header_desc">Navigation header</string>-->
+    <!--        <string name="action_settings">Settings</string>-->
 
 
-    <!--    &lt;!&ndash;Wallet&ndash;&gt;-->
+    <!--Wallet-->
 
-    <!--    <string name="currency">$</string>-->
+    <string name="currency">$</string>
 
-    <!--    &lt;!&ndash;-->
-    <!--        <string name="currency">\u20B9</string>-->
-    <!--    &ndash;&gt;-->
-    <!--    <string name="label_virtual_wallet">Virtual Wallet</string>-->
-    <!--    <string name="label_wallet_balance">Wallet Balance</string>-->
-    <!--    <string name="lable_transaction_history">Transaction History</string>-->
-    <!--    <string name="btn_save_details">Save Details</string>-->
+    <!--
+            <string name="currency">\u20B9</string>
+        -->
+    <string name="label_virtual_wallet">Virtual Wallet</string>
+    <string name="label_wallet_balance">Wallet Balance</string>
+    <string name="lable_transaction_history">Transaction History</string>
+    <string name="btn_save_details">Save Details</string>
 
 
-    <!--    &lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
-    <!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
-    <!--    <string name="title_activity_wheel_hub">WheelHubActivity</string>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_wheel_hub">WheelHubActivity</string>
 
-    <!--    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>-->
-    <!--    <string name="banner_home_footer">ca-app-pub-3940256099942544/6300978111</string>-->
-    <!--    <string name="interstitial_full_screen">ca-app-pub-XXXXXXXX~XXXXXXXXXXX</string>-->
-    <!--    <string name="rewarded_video">ca-app-pub-XXXXXXXX~XXXXXXXXXXX</string>-->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_home_footer">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_full_screen">ca-app-pub-XXXXXXXX~XXXXXXXXXXX</string>
+    <string name="rewarded_video">ca-app-pub-XXXXXXXX~XXXXXXXXXXX</string>
 </resources>
